@@ -1,6 +1,7 @@
 import React from "react";
 import InputArea from "../../components/InputArea";
 import Button from "../../components/Button";
+import OutputArea from "../../components/OutputArea";
 import styles from "./HomePage.module.css";
 
 function HomePage() {
@@ -15,6 +16,7 @@ function HomePage() {
 				<Button>Encode</Button>
 				<Button>Decode</Button>
 			</div>
+			<OutputArea />
 		</div>
 	);
 }
