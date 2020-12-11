@@ -6,19 +6,35 @@ import styles from "./HomePage.module.css";
 
 function HomePage() {
 	const [inputText, setInputText] = useState("");
+	const [outputText, setOutputText] = useState("");
 
 	return (
 		<div>
 			<div className={styles.btns}>
-				<Button>Generate a Random Joke</Button>
+				<Button
+					type="generate_joke"
+					inputText={inputText}
+					setOutputText={setOutputText}>
+					Generate a Random Joke
+				</Button>
 			</div>
 
 			<InputArea inputText={inputText} setInputText={setInputText} />
 			<div className={styles.btns}>
-				<Button>Encode</Button>
-				<Button>Decode</Button>
+				<Button
+					type="encode"
+					inputText={inputText}
+					setOutputText={setOutputText}>
+					Encode
+				</Button>
+				<Button
+					type="decode"
+					inputText={inputText}
+					setOutputText={setOutputText}>
+					Decode
+				</Button>
 			</div>
-			<OutputArea />
+			<OutputArea outputText={outputText} />
 		</div>
 	);
 }
