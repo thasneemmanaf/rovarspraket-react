@@ -1,10 +1,11 @@
 import React from "react";
 import "./Button.module.css";
+import encodeText from "../../utils/encodeText";
 
 function Button({ children, type, inputText, setOutputText }) {
 	const onClickHandler = (type) => {
 		if (type === "encode") {
-			setOutputText(inputText);
+			setOutputText(encodeText(inputText));
 		}
 	};
 
