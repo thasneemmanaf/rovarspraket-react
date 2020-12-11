@@ -1,7 +1,8 @@
 import React from "react";
+import "./Button.module.css";
 
-function Button() {
-	return <button>btn</button>;
+function Button({ children }) {
+	return <button>{children}</button>;
 }
 
 export default Button;

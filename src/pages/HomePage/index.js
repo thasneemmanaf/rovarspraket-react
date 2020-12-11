@@ -7,13 +7,13 @@ function HomePage() {
 	return (
 		<div>
 			<div className={styles.btns}>
-				<Button />
+				<Button>Generate a Random Joke</Button>
 			</div>
 
 			<InputArea />
 			<div className={styles.btns}>
-				<Button />
-				<Button />
+				<Button>Encode</Button>
+				<Button>Decode</Button>
 			</div>
 		</div>
 	);
