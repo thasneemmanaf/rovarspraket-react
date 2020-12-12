@@ -5,6 +5,7 @@ import decodeText from "../../utils/decodeText";
 import fetchJokeAPI from "../../utils/fetchJokeAPI";
 
 function Button({ children, type, inputText, setOutputText, setInputText }) {
+	// Encode/Decode/Fetch Joke based on button type
 	const onClickHandler = async (type) => {
 		if (type === "encode") {
 			setOutputText(encodeText(inputText));
@@ -12,6 +13,7 @@ function Button({ children, type, inputText, setOutputText, setInputText }) {
 			setOutputText(decodeText(inputText));
 		} else if (type === "generate_joke") {
 			setInputText(await fetchJokeAPI());
+			setOutputText("");
 		}
 	};
 

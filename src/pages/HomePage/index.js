@@ -19,7 +19,6 @@ function HomePage() {
 					Joke of the Day
 				</Button>
 			</div>
-
 			<InputArea inputText={inputText} setInputText={setInputText} />
 			<div className={styles.btns}>
 				<Button

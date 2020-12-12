@@ -9,7 +9,7 @@ function InputArea({ inputText, setInputText }) {
 	return (
 		<textarea
 			className={styles.inputArea}
-			placeholder="Please enter your joke here"
+			placeholder="Please enter your joke here or hit JOKE OF THE DAY button"
 			rows="5"
 			cols="60"
 			value={inputText}
