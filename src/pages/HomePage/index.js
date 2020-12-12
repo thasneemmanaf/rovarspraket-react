@@ -14,7 +14,8 @@ function HomePage() {
 				<Button
 					type="generate_joke"
 					inputText={inputText}
-					setOutputText={setOutputText}>
+					setOutputText={setOutputText}
+					setInputText={setInputText}>
 					Generate a Random Joke
 				</Button>
 			</div>
