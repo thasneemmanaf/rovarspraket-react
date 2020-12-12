@@ -10,7 +10,7 @@
 }
 
 .inputArea:focus {
-	background: none repeat scroll 0 0 #ffffff;
+	background: #ffffff;
 	outline-width: 0;
 	border: 2px solid #5aa9d1;
 }

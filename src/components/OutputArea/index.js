@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from "./OutputArea.module.css";
 
 function OutputArea({ outputText }) {

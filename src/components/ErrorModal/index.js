@@ -1,19 +1,22 @@
 import React from "react";
-import styles from "./ErrorModal.module.css";
+
 import Button from "../Button";
 
+import styles from "./ErrorModal.module.css";
+
 function ErrorModal({ errorMessage, setErrorMessage }) {
-	// Close the error modal when clicking backdrop
+	// Close the error modal by clicking the backdrop
 	const closeModal = (e) => {
-		setErrorMessage("");
+		e.target.id === "modal" && setErrorMessage("");
 	};
 
 	return (
 		<div id="modal" className={styles.modal} onClick={closeModal}>
-			<div className={styles.modal_content}>
+			<div className={styles.modalContent}>
 				<p>{errorMessage}</p>
+
 				<Button type="close" setErrorMessage={setErrorMessage}>
-					close
+					CLOSE
 				</Button>
 			</div>
 		</div>

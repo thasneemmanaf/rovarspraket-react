@@ -1,3 +1,4 @@
+// Decode Rövaspråket encoded joke
 const decodeText = (text) => {
 	let decodedText = "";
 	// "y" is considered as a vowel in swedish

@@ -1,15 +1,17 @@
 import React from "react";
-import "./Button.module.css";
+
 import encodeText from "../../utils/encodeText";
 import decodeText from "../../utils/decodeText";
 import fetchJokeAPI from "../../utils/fetchJokeAPI";
+
+import "./Button.module.css";
 
 function Button({
 	children,
 	type,
 	inputText,
-	setOutputText,
 	setInputText,
+	setOutputText,
 	setErrorMessage,
 }) {
 	// Encode/Decode/Fetch Joke/Show error message based on button type

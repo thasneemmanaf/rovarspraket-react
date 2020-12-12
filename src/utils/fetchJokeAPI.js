@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// Fetch a random joke
 const fetchJokeAPI = async (setErrorMessage) => {
 	try {
 		const response = await axios.get(
