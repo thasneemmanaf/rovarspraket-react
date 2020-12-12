@@ -19,7 +19,7 @@ function Button({
 		} else if (type === "decode" && inputText) {
 			setOutputText(decodeText(inputText));
 		} else if (type === "generate_joke") {
-			setInputText(await fetchJokeAPI());
+			setInputText(await fetchJokeAPI(setErrorMessage));
 			setOutputText("");
 		} else if (type === "close") {
 			setErrorMessage("");

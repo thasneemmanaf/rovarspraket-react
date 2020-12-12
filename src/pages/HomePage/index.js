@@ -17,7 +17,8 @@ function HomePage() {
 					type="generate_joke"
 					inputText={inputText}
 					setOutputText={setOutputText}
-					setInputText={setInputText}>
+					setInputText={setInputText}
+					setErrorMessage={setErrorMessage}>
 					Joke of the Day
 				</Button>
 			</div>
