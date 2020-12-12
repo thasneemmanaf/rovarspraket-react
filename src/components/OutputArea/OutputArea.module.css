@@ -7,7 +7,7 @@
 	border-radius: 20px;
 	flex-direction: column;
 	width: 40rem;
-	margin: 0 auto;
+	margin: 3rem auto;
 	background: #e7dddd5c;
 	height: auto;
 	min-height: 7rem;
@@ -16,4 +16,8 @@
 
 .outputArea:hover {
 	border: 1px solid gray;
+}
+
+.outputText {
+	font-size: 1.2rem;
 }

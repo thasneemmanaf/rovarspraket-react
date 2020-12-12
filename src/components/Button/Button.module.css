@@ -1,6 +1,6 @@
 button {
-	background-color: #55198b;
-	border: 1px solid #55198b;
+	background-color: #7a41ac;
+	border: 1px solid #7a41ac;
 	color: #fff;
 
 	font-weight: 700;
@@ -14,7 +14,7 @@ button {
 	text-decoration: none;
 	display: block;
 	outline: none;
-	margin-top: 3.6rem;
+	margin-top: 0.2rem;
 	font-size: 1rem;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out 0s;

@@ -9,14 +9,14 @@ function HomePage() {
 	const [outputText, setOutputText] = useState("");
 
 	return (
-		<div>
+		<div className={styles.container}>
 			<div className={styles.btns}>
 				<Button
 					type="generate_joke"
 					inputText={inputText}
 					setOutputText={setOutputText}
 					setInputText={setInputText}>
-					Generate a Random Joke
+					Joke of the Day
 				</Button>
 			</div>
 

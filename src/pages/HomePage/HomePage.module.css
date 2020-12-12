@@ -1,3 +1,7 @@
+.container {
+	margin-top: 4rem;
+}
+
 .btns {
 	display: flex;
 	justify-content: space-evenly;

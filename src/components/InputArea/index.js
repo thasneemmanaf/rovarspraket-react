@@ -11,7 +11,7 @@ function InputArea({ inputText, setInputText }) {
 			className={styles.inputArea}
 			placeholder="Please enter your joke here"
 			rows="5"
-			cols="40"
+			cols="60"
 			value={inputText}
 			onChange={onChangeHandler}></textarea>
 	);
